@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Checkout</h2>
+<form method="post">
+    Name: <input name="name" required><br>
+    Email: <input name="email" required><br>
+    Address: <textarea name="address" required></textarea><br>
+    <button type="submit">Place Order</button>
+</form>
+{% endblock %}

@@ -1,0 +1,186 @@
+/* 🎨 Modern Clean CSS for Simple Flask Store */
+/* No JS, No frameworks — only pure CSS */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* 🌈 Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  padding: 12px 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .title {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .links a:hover {
+  color: #ffe066;
+}
+
+/* 🌟 Page Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* 🛍️ Home Page Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  color: #0077b6;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 🛒 Cart, Checkout, Admin Forms */
+form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form button,
+button,
+a.button {
+  background: #0096c7;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.1s;
+}
+
+form button:hover,
+a.button:hover {
+  background: #023e8a;
+  transform: scale(1.05);
+}
+
+/* 🧾 Cart Page */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 💼 Admin Page */
+.admin-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.admin-section h3 {
+  color: #0096c7;
+}
+
+.admin-products li {
+  display: flex;
+  align-items: center;
+}
+
+.admin-products img {
+  width: 60px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+/* ❤️ Thank You Page */
+.thankyou {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.thankyou h2 {
+  color: #0077b6;
+}

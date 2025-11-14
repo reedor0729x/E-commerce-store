@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Panel</h2>
+<form method="post">
+    Name: <input name="name"><br>
+    Price: <input name="price"><br>
+    Description: <textarea name="description"></textarea><br>
+    Image URL: <input name="image_url" placeholder="https://example.com/image.jpg"><br>
+    <button type="submit">Add Product</button>
+</form>
+
+<hr>
+<h3>Existing Products</h3>
+<ul>
+{% for p in products %}
+    <li>{{ p.name }} - ₹{{ p.price }}
+        <a href="/delete_product/{{ p.id }}">Delete</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
